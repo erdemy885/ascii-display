@@ -8,12 +8,17 @@ Window::Window(int x, int y){
     width = x;
     height = y;
     screen = new char[width*height];
-    cls();
 	SetConsoleActiveScreenBuffer(hConsole);
+    cls();
+    ref();
 }
 
 void Window::draw(int x, int y, int b){
     screen[y*width + x] = brightness[b];
+}
+
+void Window::drawc(int x, int y, char c){
+    screen[y*width + x] = c;
 }
 
 void Window::ref(){
@@ -45,6 +50,14 @@ void Window::draw(int x, int y, int b)
     if (0 <= x && 0 <= y && 0 <= b && x < width && y < height && b < 13)
     {
         mvaddch(y, x, brightness[b]);
+    }
+}
+
+void Window::draw(int x, int y, char c)
+{
+    if (0 <= x && 0 <= y && x < width && y < height)
+    {
+        mvaddch(y, x, c);
     }
 }
 
