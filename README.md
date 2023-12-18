@@ -7,7 +7,7 @@
 ## Dependencies
 
 - **Windows**: None required.
-- **MacOS**: ncurses is needed. Install it via Homebrew: brew install ncurses
+- **MacOS**: ncurses is needed. Install it via Homebrew: `brew install ncurses`
 - **Linux**: ncurses is also required. Installation instructions for different distributions can be found [here](https://www.cyberciti.biz/faq/linux-install-ncurses-library-headers-on-debian-ubuntu-centos-fedora/).
 
 ## Instructions
