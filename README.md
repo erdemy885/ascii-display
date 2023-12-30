@@ -11,7 +11,7 @@
 - **Linux**: ncurses is also required. Installation instructions for different distributions can be found [here](https://www.cyberciti.biz/faq/linux-install-ncurses-library-headers-on-debian-ubuntu-centos-fedora/).
 
 ## Instructions
-
+- Include the `ascii-display.h` header file at the top of your file
 - When compiling on **MacOS** or **Linux**, ensure to include the `-lncurses` tag at the end of your compile command.
 - On **Windows**, adjust the terminal properties to match the size of your Window in the code. [Here's](https://pureinfotech.com/change-default-height-width-windows-terminal/) how you can do this on Windows 10 and 11
 
