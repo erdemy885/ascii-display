@@ -62,6 +62,10 @@ public:
         height = y;
     }
 
+    ~Window(){
+        endwin();
+    }
+
     void draw(int x, int y, int b)
     {
         if (0 <= x && 0 <= y && 0 <= b && x < width && y < height && b < 13)
