@@ -62,7 +62,8 @@ public:
         height = y;
     }
 
-    ~Window(){
+    ~Window()
+    {
         endwin();
     }
 
